@@ -1,13 +1,13 @@
-package com.example.demo;
+package com.car_pooling.CarPooling;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class CarPoolingApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(CarPoolingApplication.class, args);
 	}
 
 }
