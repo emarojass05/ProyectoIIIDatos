@@ -1,9 +1,17 @@
 package com.carpooling.CarPooling.models;
 
+import java.util.ArrayList;
+
 public class EmpleadoModel {
 
     private String name;
-    private int rol;
+
+    private Double calificacion;
+
+    private int ID;
+
+    private ArrayList<ChoferModel> amigos;
+
     public String getName() {
         return name;
     }
@@ -12,12 +20,27 @@ public class EmpleadoModel {
         this.name = name;
     }
 
-    public int getRol() {
-        return rol;
+    public int getID() {
+        return ID;
     }
 
-    public void setRol(int rol) {
-        this.rol = rol;
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
+    public Double getCalificacion() {
+        return calificacion;
+    }
+
+    public void setCalificacion(Double calificacion) {
+        this.calificacion = calificacion;
+    }
+
+    public ArrayList<ChoferModel> getAmigos() {
+        return amigos;
+    }
+
+    public void setAmigos(ArrayList<ChoferModel> amigos) {
+        this.amigos = amigos;
+    }
 }

@@ -18,8 +18,6 @@ public class EmpleadoRepository {
     }
 
     public static EmpleadoModel guardarUsuario(EmpleadoModel empleado){
-        empleado.setName(empleado.getName());
-        empleado.setRol(empleado.getRol());
         return empleado;
     }
 }
