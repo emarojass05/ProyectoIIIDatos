@@ -13,9 +13,9 @@ public class ChoferRepository {
         ArrayList<ChoferModel> Lista_de_choferes = new ArrayList<ChoferModel>();
         Lista_de_choferes.add(choferModel);
         return Lista_de_choferes;
-    }
 
-    public static ChoferModel guardarChofer(ChoferModel chofer){
-        return chofer;
+//
+//    public static ChoferModel guardarChofer(ChoferModel chofer){
+//        return chofer;
     }
 }
