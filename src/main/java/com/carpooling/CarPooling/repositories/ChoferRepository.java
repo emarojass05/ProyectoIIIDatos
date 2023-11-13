@@ -1,9 +1,10 @@
 package com.carpooling.CarPooling.repositories;
 
+import com.carpooling.CarPooling.XML;
 import com.carpooling.CarPooling.models.ChoferModel;
 import org.springframework.stereotype.Repository;
-
 import java.util.ArrayList;
+
 @Repository
 public class ChoferRepository {
     ArrayList<ChoferModel> Lista = new ArrayList<ChoferModel>();
@@ -13,9 +14,16 @@ public class ChoferRepository {
         ArrayList<ChoferModel> Lista_de_choferes = new ArrayList<ChoferModel>();
         Lista_de_choferes.add(choferModel);
         return Lista_de_choferes;
+    }
 
-//
-//    public static ChoferModel guardarChofer(ChoferModel chofer){
-//        return chofer;
+    public static ChoferModel guardarChofer(ChoferModel chofer) {
+        String nomArchivo = "usuarios";
+        try {
+            XML.crearXMLchofer(nomArchivo, chofer);
+            XML.leerXML("chofer");
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+        return chofer;
     }
 }

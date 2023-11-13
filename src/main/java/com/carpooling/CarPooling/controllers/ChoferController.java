@@ -4,7 +4,6 @@ import com.carpooling.CarPooling.models.ChoferModel;
 import com.carpooling.CarPooling.services.ChoferService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.ArrayList;
 
 @RestController
@@ -21,6 +20,5 @@ public class ChoferController {
     @PostMapping
     public ChoferModel guardarChofer(@RequestBody ChoferModel chofer){
         return this.choferService.guardarChofer(chofer);
-
     }
 }
