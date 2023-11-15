@@ -4,7 +4,6 @@ import com.carpooling.CarPooling.models.EmpleadoModel;
 import com.carpooling.CarPooling.services.EmpleadoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.ArrayList;
 
 @RestController

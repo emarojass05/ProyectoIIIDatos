@@ -1,13 +1,12 @@
 package com.carpooling.CarPooling.repositories;
 
+import com.carpooling.CarPooling.XML;
 import com.carpooling.CarPooling.models.EmpleadoModel;
 import org.springframework.stereotype.Repository;
-
 import java.util.ArrayList;
 
 @Repository
 public class EmpleadoRepository {
-
     ArrayList<EmpleadoModel> Lista = new ArrayList<EmpleadoModel>();
 
     public static ArrayList<EmpleadoModel> obtenerEmpleado() {
@@ -18,6 +17,13 @@ public class EmpleadoRepository {
     }
 
     public static EmpleadoModel guardarUsuario(EmpleadoModel empleado){
+        String nomArchivo = "usuarios";
+        try {
+            XML.crearXMLempleado(nomArchivo, empleado);
+            XML.leerXML("empleado");
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
         return empleado;
     }
 }

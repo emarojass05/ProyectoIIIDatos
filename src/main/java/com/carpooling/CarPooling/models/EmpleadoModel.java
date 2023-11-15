@@ -5,11 +5,8 @@ import java.util.ArrayList;
 public class EmpleadoModel {
 
     private String name;
-
     private Double calificacion;
-
     private int ID;
-
     private ArrayList<ChoferModel> amigos;
 
     public String getName() {
