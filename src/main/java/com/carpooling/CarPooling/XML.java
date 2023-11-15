@@ -38,6 +38,7 @@ public class XML {
 //        empleadoco.guardarEmpleado(empleado);
 //    }
 
+
     public static void leerXML(String type) {
         try {
             File archivo = new File("usuarios.xml");
@@ -75,9 +76,46 @@ public class XML {
         }
     }
 
+    public static boolean ingresar(String nombre, String contraseña) {
+        try {
+            File archivo = new File("usuarios.xml");
+
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder documentBuilder = factory.newDocumentBuilder();
+            Document document = documentBuilder.parse(archivo);
+            document.getDocumentElement().normalize();
+
+            NodeList listaUsuarios = null;
+            listaUsuarios = document.getElementsByTagName("Chofer");
+            for (int i = 0; i < listaUsuarios.getLength(); i++) {
+                Node nodo = listaUsuarios.item(i);
+                if (nodo.getNodeType() == Node.ELEMENT_NODE) {
+                    Element element = (Element) nodo;
+                    if(nombre.equals(element.getElementsByTagName("Nombre").item(0).getTextContent())
+                            && contraseña.equals(element.getElementsByTagName("Contraseña").item(0).getTextContent())){
+                        return true;
+                    }
+                }
+            }
+            listaUsuarios = document.getElementsByTagName("Empleado");
+            for (int i = 0; i < listaUsuarios.getLength(); i++) {
+                Node nodo = listaUsuarios.item(i);
+                if (nodo.getNodeType() == Node.ELEMENT_NODE) {
+                    Element element = (Element) nodo;
+                    if(nombre.equals(element.getElementsByTagName("Nombre").item(0).getTextContent())
+                            && contraseña.equals(element.getElementsByTagName("Contraseña").item(0).getTextContent())){
+                        return true;
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
     public static void crearXMLchofer(String nomArchivo, ChoferModel chofer) throws ParserConfigurationException, TransformerConfigurationException, TransformerException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-
         try {
             DocumentBuilder builder = factory.newDocumentBuilder();
 
@@ -120,11 +158,16 @@ public class XML {
             Text nodeAmigosValue = document.createTextNode(String.valueOf(chofer.getAmigos()));
             amigosNode.appendChild(nodeAmigosValue);
 
+            Element contraseñaNode = document.createElement("Contraseña");
+            Text nodeContraseñaValue = document.createTextNode(String.valueOf(chofer.getContraseña()));
+            contraseñaNode.appendChild(nodeContraseñaValue);
+
             // Agregar nodos al nodo Chofer
             itemNode.appendChild(nombreNode);
             itemNode.appendChild(idNode);
             itemNode.appendChild(califNode);
             itemNode.appendChild(amigosNode);
+            itemNode.appendChild(contraseñaNode);
 
             // Agregar el nodo Chofer al nodo raíz
             raiz.appendChild(itemNode);
@@ -194,11 +237,16 @@ public class XML {
             Text nodeAmigosValue = document.createTextNode(String.valueOf(empleado.getAmigos()));
             amigosNode.appendChild(nodeAmigosValue);
 
+            Element contraseñaNode = document.createElement("Contraseña");
+            Text nodeContraseñaValue = document.createTextNode(String.valueOf(empleado.getContraseña()));
+            contraseñaNode.appendChild(nodeContraseñaValue);
+
             // Agregar nodos al nodo Chofer
             itemNode.appendChild(nombreNode);
             itemNode.appendChild(idNode);
             itemNode.appendChild(califNode);
             itemNode.appendChild(amigosNode);
+            itemNode.appendChild(contraseñaNode);
 
             // Agregar el nodo Chofer al nodo raíz
             raiz.appendChild(itemNode);

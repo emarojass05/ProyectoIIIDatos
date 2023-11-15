@@ -8,8 +8,6 @@ import java.util.ArrayList;
 
 @Service
 public class EmpleadoService {
-    @Autowired
-    EmpleadoRepository usuarioRepository;
 
     public ArrayList<EmpleadoModel> obtenerEmpleados() {
         return EmpleadoRepository.obtenerEmpleado();

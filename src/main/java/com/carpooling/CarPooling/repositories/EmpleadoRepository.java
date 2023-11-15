@@ -13,6 +13,7 @@ public class EmpleadoRepository {
         EmpleadoModel usuarioModel = new EmpleadoModel();
         ArrayList<EmpleadoModel> Lista_de_usuarios = new ArrayList<EmpleadoModel>();
         Lista_de_usuarios.add(usuarioModel);
+        XML.leerXML("empleado");
         return Lista_de_usuarios;
     }
 
@@ -20,7 +21,6 @@ public class EmpleadoRepository {
         String nomArchivo = "usuarios";
         try {
             XML.crearXMLempleado(nomArchivo, empleado);
-            XML.leerXML("empleado");
         } catch(Exception e) {
             e.printStackTrace();
         }

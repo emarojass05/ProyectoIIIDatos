@@ -9,6 +9,8 @@ public class ChoferModel {
     private int ID;
     private ArrayList<EmpleadoModel> amigos;
 
+    private String contraseña;
+
     public String getName() {
         return name;
     }
@@ -39,5 +41,13 @@ public class ChoferModel {
 
     public void setAmigos(ArrayList<EmpleadoModel> amigos) {
         this.amigos = amigos;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
     }
 }

@@ -13,6 +13,7 @@ public class ChoferRepository {
         ChoferModel choferModel = new ChoferModel();
         ArrayList<ChoferModel> Lista_de_choferes = new ArrayList<ChoferModel>();
         Lista_de_choferes.add(choferModel);
+        XML.leerXML("chofer");
         return Lista_de_choferes;
     }
 
@@ -20,7 +21,6 @@ public class ChoferRepository {
         String nomArchivo = "usuarios";
         try {
             XML.crearXMLchofer(nomArchivo, chofer);
-            XML.leerXML("chofer");
         } catch(Exception e) {
             e.printStackTrace();
         }

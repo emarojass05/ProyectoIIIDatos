@@ -8,8 +8,6 @@ import java.util.ArrayList;
 
 @Service
 public class ChoferService {
-    @Autowired
-    ChoferRepository choferRepository;
 
     public ArrayList<ChoferModel> obtenerChoferes() {
         return ChoferRepository.obtenerChoferes();

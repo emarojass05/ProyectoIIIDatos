@@ -9,6 +9,8 @@ public class EmpleadoModel {
     private int ID;
     private ArrayList<ChoferModel> amigos;
 
+    private String contraseña;
+
     public String getName() {
         return name;
     }
@@ -39,5 +41,13 @@ public class EmpleadoModel {
 
     public void setAmigos(ArrayList<ChoferModel> amigos) {
         this.amigos = amigos;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
     }
 }
