@@ -1,9 +1,12 @@
 package com.carpooling.CarPooling;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
-class Graph {
+public class Graph {
     private ArrayList<Node> vertex = new ArrayList<>();
 
     public void addNode (Node nodeToAdd) {
@@ -57,9 +60,25 @@ class Graph {
         return result;
     }
 
+    public int getPesoRuta(Graph grafo, int[] lista, int grade){
+        int ruta = 0;
+        int[][] matriz = grafo.getRelationMatrix();
+        Dijkstra d = new Dijkstra(grafo.getGraphGrade());
+        for (int i = 1; i <= grafo.getGraphGrade(); i++){
+            for (int j = 1; j <= grafo.getGraphGrade(); j++){
+                d.cost[i][j] = matriz[i-1][j-1];
+            }
+        }
+        for (int i = 1; i < lista.length; i++){
+            d.calc(grade, lista[i]);
+            System.out.println("source :"+(lista[i-1])+"\t destination :"+lista[i]+"\t MinCost is :"+d.distance[lista[i-1]]+"\t");
+            ruta += d.distance[lista[i-1]];
+        }
+        return ruta;
+    }
 
     /* Grafo de ejemplo */
-    public static void main (String[] args) {
+    public static void main (String[] args) throws JsonProcessingException {
         Graph grafo = new Graph();
         Node nodeA = new Node("A");
         Node nodeB = new Node("B");
@@ -99,21 +118,13 @@ class Graph {
         for (Node node : a) {
             grafo.addNode(node);
         }
-        System.out.println(grafo.getGraphGrade());
+        int[] lista = new int[]{3, 5, 1};
 
-        int[][] matriz = grafo.getRelationMatrix();
+        System.out.println(grafo.getPesoRuta(grafo, lista, grafo.getGraphGrade()));
 
-        Dijkstra d = new Dijkstra(grafo.getGraphGrade());
-        for (int i = 1; i <= grafo.getGraphGrade(); i++){
-            for (int j = 1; j <= grafo.getGraphGrade(); j++){
-                d.cost[i][j] = matriz[i-1][j-1];
-            }
-        }
-        int grade = grafo.getGraphGrade();
-        int source = 1;
-        d.calc(grade, source);
 
-        System.out.println("source :"+source+"\t destination :"+5+"\t MinCost is :"+d.distance[5]+"\t");
+
+
 
     }
 }

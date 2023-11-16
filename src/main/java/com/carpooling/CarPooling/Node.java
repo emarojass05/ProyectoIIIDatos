@@ -1,7 +1,7 @@
 package com.carpooling.CarPooling;
 import java.util.*;
 
-class Node {
+public class Node {
     private boolean visited = false;
 
     public String getName() {
