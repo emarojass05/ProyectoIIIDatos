@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 class Graph {
-    public ArrayList<Node> vertex = new ArrayList<>();
+    private ArrayList<Node> vertex = new ArrayList<>();
 
     public void addNode (Node nodeToAdd) {
         this.vertex.add(nodeToAdd);
