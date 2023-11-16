@@ -32,6 +32,18 @@ class Node {
         return this.associations;
     }
 
+    public int getRelation (String nodeName) {
+        if (nodeName.matches(this.name)) {
+            return 0;
+        }
+        for (ArrayList<Object> a : this.associations) {
+            if (((Node)a.get(0)).name.matches(nodeName)) {
+                return (int)a.get(1);
+            }
+        }
+        return 999;
+    }
+
     public void displayInfo () {
         System.out.println("Las conexiones del nodo " + this.name + " son:");
         for (ArrayList<Object> relation : this.associations) {

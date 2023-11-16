@@ -26,6 +26,21 @@ class Graph {
         return null;
     }
 
+    public int[][] getRelationMatrix () {
+        int[][] result = new int[this.vertex.size()][this.vertex.size()];
+        for (int i = 0; i < this.vertex.size(); i++) {
+            Node node = (Node) this.vertex.get(i);
+            for (int j = 0; j < this.vertex.size(); j++) {
+                result[i][j] = node.getRelation(((Node)this.vertex.get(j)).name);
+                System.out.print(result[i][j] + " ");
+            }
+            System.out.print("\n");
+        }
+        return result;
+    }
+
+
+
     /* Grafo de ejemplo */
     public static void main (String[] args) {
         Graph grafo = new Graph();
@@ -73,9 +88,9 @@ class Graph {
         Node[] a = {nodeA, nodeB, nodeC, nodeD, nodeE, nodeF};
         for (Node node : a) {
             grafo.addNode(node);
-            node.displayInfo();
         }
 
+        grafo.getRelationMatrix();
     }
     
 }
