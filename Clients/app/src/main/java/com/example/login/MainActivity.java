@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                Intent intent = new Intent(MainActivity.this, MapActivity.class);
                 startActivity(intent);
                 finish();
                 return;
@@ -47,40 +47,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mLogin = (Button) findViewById(R.id.btnLogin);
-
-        mLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish();
-                return;
-                /*
-                try {
-                    URL url = new URL("localhost:8080/login");
-                    HttpURLConnection con = (HttpURLConnection) url.openConnection();
-                    con.setRequestMethod("GET");
-
-                    BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-                    String inputLine;
-                    StringBuffer content = new StringBuffer();
-                    while ((inputLine = in.readLine()) != null) {
-                        content.append(inputLine);
-                    }
-                    in.close();
-                    con.disconnect();
-
-                    System.out.println(content.toString());
-
-                } catch (Exception e) {
-                    checkCred = (TextView) findViewById(R.id.CheckCredText);
-                    checkCred.setVisibility(View.VISIBLE);
-                }
-
-                 */
-            }
-        });
 
 
 
