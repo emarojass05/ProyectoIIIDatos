@@ -4,18 +4,77 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9545ba9b-495b-491c-9af7-c0d6736bbc6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Clients/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clients/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clients/app/src/main/res/drawable/cartagomap.png" afterDir="false" />
+    <list default="true" id="9545ba9b-495b-491c-9af7-c0d6736bbc6a" name="Changes" comment="Servidor funcional">
+      <change afterPath="$PROJECT_DIR$/Clients/app/src/main/java/com/example/login/interfaces/LoginAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clients/app/src/main/java/com/example/login/models/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/controllers/ChoferController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/controllers/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usuarios.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clients/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clients/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/androidTest/java/com/example/login/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/androidTest/java/com/example/login/ExampleInstrumentedTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clients/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/java/com/example/login/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/java/com/example/login/LoginActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clients/app/src/main/java/com/example/login/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/java/com/example/login/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/java/com/example/login/MapActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/java/com/example/login/MapActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/java/com/example/login/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/java/com/example/login/RegisterActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/layout/activity_login.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/layout/activity_map.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/layout/activity_map.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/xml/backup_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/app/src/test/java/com/example/login/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/app/src/test/java/com/example/login/ExampleUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Clients/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Clients/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car_pooling/CarPooling/CarPoolingApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/CarPoolingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/CarPoolingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/Example2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/XML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/XML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/controllers/ChoferController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/controllers/EmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/controllers/EmpleadoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/controllers/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/controllers/RutaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/controllers/RutaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/models/ChoferModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/models/ChoferModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/models/EmpleadoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/models/EmpleadoModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/models/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/models/LoginModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/models/RutaModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/models/RutaModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/repositories/ChoferRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/repositories/ChoferRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/repositories/EmpleadoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/repositories/EmpleadoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/repositories/LoginRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/repositories/LoginRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/repositories/RutaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/repositories/RutaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/services/ChoferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/services/ChoferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/services/EmpleadoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/services/EmpleadoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/services/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carpooling/CarPooling/services/RutaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Carpooling/services/RutaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/car_pooling/CarPooling/CarPoolingApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/carpooling/CarPooling/CarPoolingApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Carpooling/DemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/carpooling/CarPooling/models/UsuarioModelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuarios.xml" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,30 +97,88 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "ema",
-    "last_opened_file_path": "C:/Users/monge/OneDrive/Documentos/TEC/II Semestre 2023/CE 1103 - Algoritmos Y Estructuras De Datos I/Proyectos/Proyecto 3/ProyectoIIIDatos"
+    "git-widget-placeholder": "brayan",
+    "last_opened_file_path": "E:/Brayan/Tareas TEC/Java (Proyectos)/CarPooling/src/main/java/com/Carpooling",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "34033efceba376cc8d818bd3b4ed30a2",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Brayan\Tareas TEC\Java (Proyectos)\CarPooling\src\main\java\com\Carpooling" />
+      <recent name="E:\Brayan\Tareas TEC\Java (Proyectos)\CarPooling" />
+      <recent name="E:\Brayan\Tareas TEC\Java (Proyectos)\CarPooling\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\monge\OneDrive\Documentos\TEC\II Semestre 2023\CE 1103 - Algoritmos Y Estructuras De Datos I\Proyectos\Proyecto 3\ProyectoIIIDatos" />
       <recent name="C:\Users\monge\OneDrive\Documentos\TEC\II Semestre 2023\CE 1103 - Algoritmos Y Estructuras De Datos I\Proyectos\Proyecto 3\ProyectoIIIDatos\out\production\Graph" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.car_pooling.CarPooling" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.car_pooling.CarPooling" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Graph" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="20" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Graph" />
-      <module name="ProyectoIIIDatos" />
+  <component name="RunManager" selected="Spring Boot.Servidor">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Servidor" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="CarPooling" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Carpooling.CarPoolingApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Spring Boot.Servidor" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,7 +188,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700025838024</updated>
+      <workItem from="1700197782258" duration="2807000" />
+      <workItem from="1700203207112" duration="7788000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Servidor funcional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Servidor funcional" />
   </component>
 </project>
