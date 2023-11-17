@@ -19,4 +19,9 @@ public class LoginController {
     public boolean ingresar(@RequestBody LoginModel login){
         return this.loginService.ingresar(login.getName(), login.getContraseña());
     }
+
+    @PostMapping
+    public boolean ingresarr(@RequestBody LoginModel login){
+        return this.loginService.ingresar(login.getName(), login.getContraseña());
+    }
 }

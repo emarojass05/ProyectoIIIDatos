@@ -1,8 +1,5 @@
 package com.carpooling.CarPooling;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -78,7 +75,7 @@ public class Graph {
     }
 
     /* Grafo de ejemplo */
-    public static void main (String[] args) throws JsonProcessingException {
+    public static void main (String[] args){
         Graph grafo = new Graph();
         Node nodeA = new Node("A");
         Node nodeB = new Node("B");
