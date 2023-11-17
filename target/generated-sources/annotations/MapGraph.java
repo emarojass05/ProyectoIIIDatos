@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class MapGraph {
     public static Graph getMapGraph () {
         Graph cartagoGraph = new Graph();
-        for (int i = 34; i < 75; i++) {
+        for (int i = 27; i < 75; i++) {
             Node node = new Node(Integer.toString(i));
             cartagoGraph.addNode(node);
         }

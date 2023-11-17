@@ -61,11 +61,10 @@ class Graph {
 
 
 
-    /* Grafo de ejemplo */
+    /* Grafo del mapa */
     public static void main (String[] args) {
         Graph cartagoGraph = MapGraph.getMapGraph();
         cartagoGraph.getRelationMatrix();
-        System.out.print(cartagoGraph.vertex.size());
     }
     
 }
